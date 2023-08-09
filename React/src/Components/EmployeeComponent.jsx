@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { createEmployee, getEmployee, updateEmployee } from '../services/EmployeeService'
+import { createEmployee, getEmployee } from '../Services/EmployeeService';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getAllDepartments } from '../services/DepartmentService';
 
