@@ -55,6 +55,10 @@ const DepartmentComponent = () => {
     }
   }
 
+  function back(){
+    navigator('/departments')
+}
+
   return (
     <div className='container'><br /><br />
       <div className='row'>
@@ -92,6 +96,7 @@ const DepartmentComponent = () => {
                           </input>
                       </div>
                       <button className='btn btn-success mb-2' onClick={(e) => saveOrUpdateDepartment(e)}>Submit</button>
+                      <button className='btn btn-success float-end' type="button" onClick={back}>Back</button>
                   </form>
 
               </div>

@@ -117,6 +117,10 @@ const EmployeeComponent = () => {
         }
     }
 
+    function back(){
+        navigator('/employees')
+    }
+
   return (
     <div className='container p-5 mb-5 bg-light text-dark rounded container-move'>
 
@@ -188,6 +192,7 @@ const EmployeeComponent = () => {
                             { errors.department && <div className='invalid-feedback'> { errors.department} </div> }
                         </div>
                         <button className='btn btn-success' onClick={saveOrUpdateEmployee} >Submit</button>
+                        <button className='btn btn-success float-end' type="button" onClick={back}>Back</button>
                     </form>
 
                 </div>
